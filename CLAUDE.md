@@ -1,8 +1,8 @@
-# 🛠️ Paperflow
+# 🛠️ PaperFlow
 
 这是 Claude Code 的项目定义文件。操作指令和完整文档在 [`AGENTS.md`](AGENTS.md) 中。
 
-Paperflow 是一个 CLI 技能集，用于学术文献管理和 AI 辅助论文写作。通过 `KNOWLEDGE_ROOT` 环境变量指向本地知识库数据目录。
+PaperFlow 是一个 CLI 技能集，用于学术文献管理和 AI 辅助论文写作。通过 `KNOWLEDGE_ROOT` 环境变量指向本地知识库数据目录。
 
 ---
 

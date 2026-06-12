@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🛠️ Paperflow
+# 🛠️ PaperFlow
 
 **可移植的学术文献管理 + AI 论文写作 CLI 管线**
 

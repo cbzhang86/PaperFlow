@@ -1,6 +1,6 @@
-# Paperflow — 项目指令
+# PaperFlow — 项目指令
 
-Paperflow 是一个 CLI 技能集，用于学术文献管理和 AI 辅助论文写作。通过 `KNOWLEDGE_ROOT` 环境变量指向本地知识库数据目录，所有操作在数据目录下执行。
+PaperFlow 是一个 CLI 技能集，用于学术文献管理和 AI 辅助论文写作。通过 `KNOWLEDGE_ROOT` 环境变量指向本地知识库数据目录，所有操作在数据目录下执行。
 
 ---
 

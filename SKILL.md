@@ -1,10 +1,10 @@
 ---
-name: paperflow
+name: PaperFlow
 description: 学术文献管理与AI论文写作工作流框架 — 采集、精读、跨篇沉淀、ARS论文写作
 version: 10.5.0
 user-invocable: true
 emoji: 🛠️
-homepage: https://github.com/cbzhang86/paperflow
+homepage: https://github.com/cbzhang86/PaperFlow
 requires:
   env:
     - KNOWLEDGE_ROOT
