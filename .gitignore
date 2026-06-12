@@ -1,0 +1,34 @@
+# 凭据与敏感数据
+config/ncpssd_state.json
+config/dedup.db
+config/auto_keywords.json
+
+# Python 缓存
+__pycache__/
+*.pyc
+*.pyo
+
+# 知识数据（不纳入技能仓库）
+01_论文原文/
+02_精读报告/
+03_学术写作素材库/
+04_研究方法/
+05_报告/
+10_研究输出/
+ObsidianVault/
+99_归档/
+00_临时工作区/
+logs/
+
+# IDE
+.idea/
+.vscode/
+
+# 系统
+.DS_Store
+Thumbs.db
+
+# 临时
+*.tmp
+*.log
+node_modules/

@@ -1,0 +1,36 @@
+# 精读模板结构配置
+# 此文件给 review/check 自动化校验用，不是 AI 提示模板
+# AI 写作提示请参考 analysis_template.md
+
+templates:
+  default:
+    sections:
+      - 论文信息表
+      - 研究概述
+      - 质量评分
+      - 内容拆解
+      - 我的思考
+      - 标签表
+    min_lines: 175
+    max_lines: 205
+    rating_dimensions:
+      - 研究问题
+      - 理论框架
+      - 研究设计
+      - 证据质量
+      - 分析深度
+      - 写作表达
+      - 创新贡献
+
+  stem:
+    sections:
+      - Abstract
+      - Methodology
+      - Results
+      - Reproducibility
+    min_lines: 100
+    max_lines: 150
+    rating_dimensions:
+      - Reproducibility
+      - Novelty
+      - Empirical Rigor
