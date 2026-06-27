@@ -2,6 +2,7 @@
 config/ncpssd_state.json
 config/dedup.db
 config/auto_keywords.json
+.env
 
 # Python 缓存
 __pycache__/

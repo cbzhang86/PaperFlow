@@ -11,7 +11,7 @@ requires:
   bins:
     - python3
 ---
-# 学术知识工作流框架
+# PaperFlow — 学术知识工作流框架
 
 一个可移植的 CLI 管线，用于学术文献管理和 AI 辅助论文写作。**零外部服务依赖**，Clone 即用，替换关键词即可适配任何学科。
 
@@ -106,6 +106,22 @@ python skills/metadata/dedup.py status    # 查看统计
 | 运维Agent | 完整性检查 → Obsidian 同步 |
 
 ---
+
+### 引文推荐（Semantic Scholar）
+
+基于已有精读的标题，自动推荐相关论文并检查 PDF 可获取性。
+
+```bash
+# 设置 API Key（仅当前会话有效）
+export S2_API_KEY=你的key
+
+# 对某方向进行引文推荐
+python skills/collect/semantic_recommend.py --direction 老龄化
+
+# 推荐列表中的操作：下载 / 稍后 / 不相关
+```
+
+> 首次使用：复制 `.env.example` 为 `.env`，填入 S2_API_KEY（自动加载）
 
 ## 换领域指南
 

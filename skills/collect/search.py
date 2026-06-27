@@ -13,7 +13,7 @@ def load_sources():
     # 支持 _source.py（master）和 .py（framework）两种命名
     for f in sorted(src_dir.glob("*_source.py")) + sorted(src_dir.glob("arxiv.py")) + sorted(src_dir.glob("openalex.py")):
         name = f.stem
-        if name in ("base", "multi_source", "search", "fetch", "ncpssd", "cleanup_filenames", "standardize_filenames"):
+        if name in ("base", "multi_source", "search", "fetch", "ncpssd", "cleanup_filenames", "standardize_filenames", "semantic_scholar"):
             continue
         # 跳过 _source.py 对应的同名 .py
         if f.name.endswith("_source.py"):
@@ -43,9 +43,9 @@ def should_use_source(keyword):
     has_chinese = bool(re.search(r'[一-鿿]', keyword))
 
     if has_chinese:
-        return ["ncpssd", "arxiv", "openalex"]  # 中文关键词也用开放源
+        return ["ncpssd", "arxiv", "openalex"]
     else:
-        return ["arxiv", "openalex", "semantic_scholar"]  # 纯英文 → 开放源
+        return ["arxiv", "openalex", "semantic_scholar"]
 
 def search_all(keyword, limit=5, direction=None):
     """在所有合适的源中搜索，返回合并+去重后的结果"""
